@@ -5,7 +5,7 @@
 Consumer Price Index for All Urban Consumers: All Items in U.S. City Average | FRED
 =========================
 
-You can subscribe to the AWS Data Exchange product utilizing the automation featured in this repository by visiting []().
+You can subscribe to the AWS Data Exchange product utilizing the automation featured in this repository by visiting [https://aws.amazon.com/marketplace/pp/prodview-ksyf4hjvostua](https://aws.amazon.com/marketplace/pp/prodview-ksyf4hjvostua).
 
 ## Main Overview
 
