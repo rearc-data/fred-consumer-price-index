@@ -29,7 +29,7 @@ def data_to_s3(frmt):
             f.write(response.read())
             f.close()
 
-        variables/resources used to upload to s3
+        # variables/resources used to upload to s3
         s3_bucket = os.environ['S3_BUCKET']
         new_s3_key = data_set_name + '/dataset/'
         s3 = boto3.client('s3')
