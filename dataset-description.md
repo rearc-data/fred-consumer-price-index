@@ -1,0 +1,1 @@
+This release contains information on consumer price index for all urban consumers. This data is a measure of the average monthly change for the prices of goods and services paid by urban consumers. Roughly, this index accounts for 88% of the United States population and collects pricing data monthly from about 4,000 housing units and 26,000 retail stores from 87 urban areas.
