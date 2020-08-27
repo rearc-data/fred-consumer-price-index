@@ -3,6 +3,7 @@
 # https://stackoverflow.com/questions/1775816/how-to-get-the-md5sum-of-a-file-on-amazons-s3
 
 import hashlib
+import botocore.exceptions
 
 def md5_checksum(filename):
         m = hashlib.md5()
@@ -32,11 +33,11 @@ def md5_compare(s3, bucket_name, s3_key, filename):
         #If the file does not exist, return True for changes found
         try:
                 obj_dict = s3.head_object(Bucket=bucket_name, Key=s3_key)
-        except Exception as e:
+        except botocore.exceptions.ClientError as e:
                 error_code = e.response['Error']['Code']
                 if error_code == '404':
                         return True
-                
+
         etag = (obj_dict['ETag'])
 
         md5_matches = etag_compare(filename,etag)
