@@ -141,6 +141,8 @@ def lambda_handler(event, context):
 				'body': json.dumps('Revision did not complete successfully')
 			}
 	else:
+		print("No changes found, no Revision created".format(job_id))
+		print("Job {} completed".format(job_id))
 		return {
 			'statusCode': 200,
 			'body': json.dumps('MD5 comparison found no changes, nothing to publish')
